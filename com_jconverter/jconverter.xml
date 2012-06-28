@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>JConverter</name>
+	<creationDate>31-July-2010</creationDate>
+	<author>SopanTech Solutions</author>
+	<authorEmail>info@sopantech.com</authorEmail>
+	<authorUrl>http://www.sopantech.com</authorUrl>
+	<copyright>CopyLEFT</copyright>
+	<license>GNU/GPL</license>
+	<version>0.3 Beta</version>
+	<description>JConverter imports the Wordpress database and convert it to Joomla format. It's very easy to use and all your WordPress posts, pages, users, links and comments can be imported to Joomla in just one click.</description>
+<!--
+	<files folder="site">
+		<filename>index.html</filename>
+	</files>
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>	
+-->
+	<administration>
+		<menu>JConverter</menu>
+		
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>admin.jconverter.php</filename>
+			<filename>jconverter_config.php.orig</filename>
+
+			<filename>images/index.html</filename>
+			<filename>images/logo.png</filename>
+
+			<filename>controller.php</filename>
+			<filename>controllers/index.html</filename>
+			<filename>controllers/cpanel.php</filename>
+            <filename>controllers/config.php</filename>
+            <filename>controllers/migrate.php</filename>
+			<filename>controllers/help.php</filename>
+
+			<filename>models/config.php</filename>
+			<filename>models/migrate.php</filename>
+			<filename>models/index.html</filename>
+
+			<filename>views/cpanel/view.html.php</filename>
+			<filename>views/cpanel/index.html</filename>
+			<filename>views/cpanel/tmpl/default.php</filename>
+			<filename>views/cpanel/tmpl/index.html</filename>
+
+			<filename>views/config/view.html.php</filename>
+			<filename>views/config/tmpl/default.php</filename>
+			<filename>views/config/index.html</filename>
+			<filename>views/config/tmpl/index.html</filename>
+
+            <filename>views/migrate/view.html.php</filename>
+            <filename>views/migrate/tmpl/default.php</filename>
+            <filename>views/migrate/index.html</filename>
+            <filename>views/migrate/tmpl/index.html</filename>
+
+            <filename>views/help/view.html.php</filename>
+            <filename>views/help/tmpl/default.php</filename>
+            <filename>views/help/index.html</filename>
+            <filename>views/help/tmpl/index.html</filename>
+
+			<filename>tables/index.html</filename>
+
+			<filename>sql/index.html</filename>
+
+			<filename>backups/index.html</filename>
+		</files>
+
+		<languages folder="admin">
+			<language tag="de-DE">languages/de-DE.com_jconverter.ini</language>
+			<language tag="es-ES">languages/es-ES.com_jconverter.ini</language>
+			<language tag="pt-BR">languages/pt-BR.com_jconverter.ini</language>
+			<language tag="pl-PL">languages/pl-PL.com_jconverter.ini</language>	
+			<language tag="fr-FR">languages/fr-FR.com_jconverter.ini</language>
+		</languages>		
+	</administration>
+</install>
